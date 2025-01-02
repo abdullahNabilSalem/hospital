@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        center {
+            padding: 20px;
+        }
+
+        img {
+            width: 100px;
+            height: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div name="Icon">
+            <img src="image/WhatsApp Image 2025-01-01 at 9.56.28 PM.jpeg" alt="Icon">
+            <div class="header">مستشفى عدن الألماني</div>
+        </div>
+        <br>
+        <div style="text-align: right;padding: 5px 5px;">
+            <a style="background-color: #4caf50;color: #fff;text-decoration: none;padding: 8px 6px;border-radius: 5px;font-weight: bold;"
+                href="index.html">
+                الانتقال ألى صفحة تسجيل المريض =>> </a>
+        </div>
+        <br>
+        <div name="TableInfo">
+            <table>
+                <thead>
+                    <tr>
+                        <th>الرقم</th>
+                        <th>الاسم</th>
+                        <th>البريد الإلكتروني</th>
+                        <th>العمر</th>
+                        <th>الموقع</th>
+                        <th>هل يعاني من أمراض سابقة</th>
+                        <th>المرض الذي يعاني منه</th>
+                        <th>التاريخ</th>
+                    </tr>
+                </thead>
+                <tbody id="patientsTableBody">
+                    <!-- سيتم عرض بيانات المرضى هنا -->
+                </tbody>
+            </table>
+        </div>
+    </center>
+</body>
+<script src="app.js"></script>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <title>مستشفى عدن الألماني</title>
+    <link rel="stylesheet" href="mh.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 150px;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        h3,
+        h4 {
+            color: #555;
+        }
+
+        .SAM {
+            margin: 20px auto;
+            max-width: 400px;
+        }
+
+        .M {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .MH {
+            margin: 20px auto;
+            max-width: 400px;
+        }
+
+        select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .P {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            display: block;
+            max-width: 400px;
+        }
+
+        .L {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            display: block;
+            max-width: 400px;
+        }
+
+        .ZZ {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px;
+            font-size: 16px;
+        }
+
+        .ZZ:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="image/WhatsApp Image 2025-01-01 at 9.56.28 PM.jpeg" alt="">
+    <h2>مستشفى عدن الألماني</h2>
+    <h3>أهلاً بك في مستشفى عدن الألماني، يمكنك ملء الاستمارة</h3>
+
+    <div class="SAM">
+        <textarea id="name" class="M" placeholder="يرجى إدخال الاسم هنا"></textarea>
+        <textarea id="email" class="M" placeholder="يرجى إدخال البريد الإلكتروني"></textarea>
+        <textarea id="age" class="M" placeholder="يرجى إدخال عمر المريض"></textarea>
+        <textarea id="location" class="M" placeholder="أين منطقة المريض"></textarea>
+    </div>
+
+    <h4>هل يعاني من أحد هذه الأمراض؟</h4>
+    <form class="MH">
+        <select id="illness">
+            <option>لا يوجد</option>
+            <option>الضغط</option>
+            <option>السكر</option>
+            <option>أخرى</option>
+        </select>
+    </form>
+
+    <textarea id="my_illness" class="P" placeholder="اشرح ما تعاني منه"></textarea>
+    <input id="date" class="L" type="date">
+
+    <button onclick="saveData()" class="ZZ">أحجز الآن</button>
+</body>
+<script src="app.js"></script>
+
+</html>
